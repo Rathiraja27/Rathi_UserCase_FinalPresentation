@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-xl-9">
+      <div class="card border-0">
+          <div class="card-body" style="margin-top: 10%; margin-left: 10%;">
+            <div class="alert alert-danger" role="alert"*ngIf="showErrorMessage">
+                <h3>Invalid username and password Please try again</h3>
+              </div>
+              <h2>Login</h2>
+              
+              <form [formGroup]="loginModel.formCustomerGroup">
+              <div>
+                  <label class="form-label">User Name</label>
+                  <input [(ngModel)]="loginModel.userName" class="form-control" formControlName="LoginControl" type="text" />
+                  <p style="color:red" [hidden]="!(hasError('required','LoginControl'))">User Name is required</p>
+                  <p style="color:red"  [hidden]="!(hasError('pattern','LoginControl'))">User Name should be proper</p>
+              </div>
+              <div>
+                  <label class="form-label">Password</label>
+                  <input [(ngModel)]="loginModel.password" class="form-control" formControlName="PasswordControl" type="text" />
+                  <p style="color:red" [hidden]="!(hasError('required','PasswordControl'))">Password is required</p>
+              </div>
+              <div class="py-4">
+                  <input type="submit" [disabled]="!(loginModel.formCustomerGroup.valid)" class="btn btn-primary" value="Login" (click)="Login()" />
+                  <br/> <br/>
+                  <p>Not a User? <a href="register">Register</a></p>
+              </div>
+            </form>
+          </div>
+      </div>
+  </div>
+</div>

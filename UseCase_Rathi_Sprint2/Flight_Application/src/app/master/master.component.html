@@ -1,0 +1,45 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="color:navy;"><b>Flight Application</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" [routerLink]="['home']"  [routerLinkActive]="['active']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(false)" style="cursor: pointer;" [routerLink]="['login']" [routerLinkActive]="['active']">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(false)" style="cursor: pointer;"  [routerLink]="['register']" [routerLinkActive]="['active']">Register</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(true)" style="cursor: pointer;"  [routerLink]="['ticketbooking/book']" [routerLinkActive]="['active']">Manage Booking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(true)" style="cursor: pointer;"  [routerLink]="['booking/history']" [routerLinkActive]="['active']">Booking History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(true)" style="cursor: pointer;"  [routerLink]="['passenger/details']" [routerLinkActive]="['active']">Book Ticket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(true) && AdminLoggedIn()"  style="cursor: pointer;" [routerLinkActive]="['active']"  [routerLink]="['discount/add']" >Manage Discounts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(true) && AdminLoggedIn()"  style="cursor: pointer;" [routerLinkActive]="['active']"  [routerLink]="['airline/add']" >Manage Airlines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(true) && AdminLoggedIn()"  style="cursor: pointer;" [routerLinkActive]="['active']"  [routerLink]="['schedule/add']" >Manage Schedules</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LogggedIn(true)"  style="cursor: pointer;" [routerLinkActive]="['active']"  (click)="Logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

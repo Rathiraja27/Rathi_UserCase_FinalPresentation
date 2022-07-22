@@ -1,0 +1,16 @@
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\bin\Debug\netcoreapp2.1\IdentityServer.deps.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\bin\Debug\netcoreapp2.1\IdentityServer.runtimeconfig.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\bin\Debug\netcoreapp2.1\IdentityServer.runtimeconfig.dev.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\bin\Debug\netcoreapp2.1\IdentityServer.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\bin\Debug\netcoreapp2.1\IdentityServer.pdb
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.csproj.AssemblyReference.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.AssemblyInfoInputs.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.AssemblyInfo.cs
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.csproj.CoreCompileInputs.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.RazorAssemblyInfo.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.RazorAssemblyInfo.cs
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.RazorTargetAssemblyInfo.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.pdb
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\obj\Debug\netcoreapp2.1\IdentityServer.genruntimeconfig.cache

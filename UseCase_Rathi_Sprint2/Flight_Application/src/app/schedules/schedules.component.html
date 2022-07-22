@@ -1,0 +1,191 @@
+<h1 style="margin-top: 5%; color:navy;text-align: center;"><u>Schedule Management</u></h1>
+<br />
+<form style="margin-left: 5%;">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFlightName">Flight Name</label>
+      <input type="text" class="form-control" [(ngModel)]="scheduleModel.flightName"
+        [ngModelOptions]="{standalone: true}" id="inputFlightName">
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputInstrument">Instrument Used</label>
+      <input type="text" class="form-control" [(ngModel)]="scheduleModel.instrumentUsed"
+        [ngModelOptions]="{standalone: true}" id="inputInstrument">
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputAirline">Airline</label>
+      <!-- <input type="text" class="form-control" [(ngModel)]="scheduleModel.airline" [ngModelOptions]="{standalone: true}" id="inputAirline" placeholder="Airline"> -->
+      <select type="text" class="form-control" [(ngModel)]="scheduleModel.airlineId" [ngModelOptions]="{standalone: true}"
+        (change)="OnSelect($event)" id="AirlineName">
+        <option *ngFor="let airline of airlineModels " [value]="airline.airlineId">
+          {{airline.airlineName}}
+        </option>
+      </select>
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputFromPlace">From Place</label>
+      <select type="text" [(ngModel)]="scheduleModel.fromPlace" (change)=onSelected(scheduleModel.fromPlace)
+        [ngModelOptions]="{standalone: true}" id="inputFromPlace" class="form-control">
+        <option>Chennai</option>
+        <option>Hyderabad</option>
+        <option>Delhi</option>
+        <option>Cochin</option>
+        <option>West Bengal</option>
+        <option>Kolkata</option>
+        <option>Mumbai</option>
+        <option>Banglore</option>
+        <option>Pondicherry</option>
+      </select>
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputToPlace">To Place</label>
+      <select [(ngModel)]="scheduleModel.toPlace" [ngModelOptions]="{standalone: true}" id="inputToPlace"
+        class="form-control">
+        <option>Chennai</option>
+        <option>Hyderabad</option>
+        <option>Delhi</option>
+        <option>Cochin</option>
+        <option>West Bengal</option>
+        <option>Kolkata</option>
+        <option>Mumbai</option>
+        <option>Banglore</option>
+        <option>Pondicherry</option>
+      </select>
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputStartDate">Start DateTime</label>
+      <input type="date" class="form-control" [(ngModel)]="scheduleModel.startDateTime"
+        [ngModelOptions]="{standalone: true}" id="inputStartDate">
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputEndDate">End DateTime</label>
+      <input type="date" class="form-control" [(ngModel)]="scheduleModel.endDateTime"
+        [ngModelOptions]="{standalone: true}" id="inputEndDate">
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputScheduledDays">Scheduled Days</label>
+      <select [(ngModel)]="scheduleModel.sceduledDays" [ngModelOptions]="{standalone: true}" id="inputScheduledDays"
+        class="form-control">
+        <option>Daily</option>
+        <option>Alternate Days</option>
+        <option>Weekly</option>
+        <option>Bi-weekly</option>
+        <option>Monthly</option>
+      </select>
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputBusinessClass">No. of Business Class Seats</label>
+      <input type="text" class="form-control" [(ngModel)]="scheduleModel.businessClassSeats"
+        [ngModelOptions]="{standalone: true}" id="inputBusinessClass">
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputNonBusinessClass">No. of Non Business Class Seats</label>
+      <input type="text" class="form-control" [(ngModel)]="scheduleModel.nonBusinessClassSeats"
+        [ngModelOptions]="{standalone: true}" id="inputNonBusinessClass">
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputTicketPrice">Ticket Price</label>
+      <input type="text" class="form-control" [(ngModel)]="scheduleModel.ticketPrice"
+        [ngModelOptions]="{standalone: true}" id="inputTicketPrice">
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputRows">Rows</label>
+      <input type="text" class="form-control" [(ngModel)]="scheduleModel.rows" [ngModelOptions]="{standalone: true}"
+        id="inputRows">
+    </div>
+    <br />
+    <div class="form-group col-md-6">
+      <label for="inputMeals">Meal</label>
+      <select id="inputMeals" [(ngModel)]="scheduleModel.meal" [ngModelOptions]="{standalone: true}"
+        class="form-control">
+        <option>Veg</option>
+        <option>Non-veg</option>
+        <option>Both</option>
+      </select>
+    </div>
+    <br />
+  </div>
+  <br />
+  <button type="submit" (click)="AddInventory()" id="btnAdd" class="btn btn-primary">Add Schedule</button>
+</form>
+<br />
+<br />
+
+<div class="alert alert-success" role="alert" *ngIf="add">
+  <h3 style="text-align: center;">Schedule Added Successfully</h3>
+</div>
+
+<h2 style="margin-left: 5%;"><b>List of Schedules</b></h2>
+<div class="container">
+  <div class="row">
+    <table id="example" class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th>Flight Name</th>
+          <th>Airline</th>
+          <th>From Place</th>
+          <th>To Place</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Price</th>
+          <th>Meals</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let schedule of scheduleModels">
+          <td>{{schedule.flightName}}</td>
+          <td>{{schedule.airlineId}}</td>
+          <td>{{schedule.fromPlace}}</td>
+          <td>{{schedule.toPlace}}</td>
+          <td>{{schedule.startDateTime}}</td>
+          <td>{{schedule.endDateTime}}</td>
+          <td>{{schedule.ticketPrice}}</td>
+          <td>{{schedule.meal}}</td>
+          <td>
+            <button type="button" (click)=LaunchModal(schedule) class="btn btn-outline-primary" style="margin:10px">View
+              Details</button>
+          
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+  <!-- Button trigger modal -->
+  <button type="button" id="modelButton" class="btn btn-primary" style="visibility: hidden;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{modalHeader}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" [innerText]="modalText">
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

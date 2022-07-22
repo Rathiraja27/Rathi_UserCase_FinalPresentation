@@ -1,0 +1,40 @@
+<div class="container" style="background-color: tan;">
+  <ngb-carousel *ngIf="images" style="margin-left: 10%;">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h2>Catch up with more offers and discounts, Exclusively for you Hurry UP!!</h2>
+        <p>Travel more to discover yourself</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]" alt="Random second slide">
+      </div>
+      <div class="carousel-caption">
+        <h2>If you never go, </h2>
+        <p>you will never know</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2]"  alt="Random third slide">
+      </div>
+      <div class="carousel-caption">
+        <h2>Put your phone in FLIGHT mode</h2>
+        <p>Stay away from social media to socialise with YOU while flying</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[3]" alt="Random fourth slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Wrap your Work and Pack your Bags</h3>
+        <p>Fly to your Dream Destinations</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

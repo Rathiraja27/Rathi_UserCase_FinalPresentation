@@ -1,0 +1,64 @@
+<h2 style="margin-top: 5%;  color:navy;text-align: center;"><b>Discounts</b></h2>
+<form>
+    <div class="form-row">
+        <div class="col-md-5" style="float: left;margin-left: 5%;">
+            <input type="text" class="form-control" placeholder="Discount Code" [(ngModel)]="discountModel.discountCode" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="col-md-5" style="float: right;margin-right: 5%;">
+            <input type="text" class="form-control" placeholder="Percentage"  [(ngModel)]="discountModel.percentage" [ngModelOptions]="{standalone: true}">
+        </div>
+        <button type="submit" class="btn btn-success" (click)="AddDiscount(discountModel)" style="margin-left: 45%;margin-top: 2%;">Add Discount</button>
+    </div>
+</form>
+
+<div class="spinner-border text-primary" *ngIf="showLoading" role="status">
+  <span class="sr-only" style=" display:block;margin: 0 auto;"></span>
+</div>
+
+<div class="alert alert-success" role="alert" *ngIf="add">
+    <h3 style="text-align: center;">Discount Added Successfully</h3>
+  </div>
+<br/><br/>
+<table *ngIf="discountModels.length >0" class="table table-dark table-hover" style="width: 50%;text-align: center;margin-left: 25%">
+    <thead>
+      <tr>
+        <th>Discount Code</th>
+        <th>Percentage</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let discount of discountModels">
+        <td>{{discount.discountCode}}</td>
+        <td>{{discount.percentage}}</td>
+        <td>
+          <button type="button" (click)=LaunchModel(discount) class="btn btn-outline-primary" 
+            style="margin:10px">View</button>
+          <button type="button" (click)=DeleteDiscount(discount) class="btn btn-outline-primary">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Button trigger modal -->
+<button type="button" id="modelButton" class="btn btn-primary" style="visibility: hidden;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{modalHeader}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            {{modalText}}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

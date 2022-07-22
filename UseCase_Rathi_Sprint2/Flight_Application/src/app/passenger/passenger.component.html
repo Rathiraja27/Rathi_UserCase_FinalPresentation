@@ -1,0 +1,365 @@
+<h2 style="margin-top: 5%;  color:navy;text-align: center;">Ticket Booking</h2>
+<div *ngIf="!showPassenger">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
+                <label style="padding: 10px;" (change)="Toggle($event)" class="radiobtn"><input type="radio" id="Oneway"
+                        name="Trip" value="One Way" [checked]="true"> One Way</label>
+                <label class="radiobtn"><input type="radio" (change)="Toggle($event)" name="Trip" id="Round"
+                        value="Round Trip"> Round Trip</label>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <label for="inputFromPlace">From Place</label>
+                <select type="text" [(ngModel)]="flightTripModel.sourcePlace" [ngModelOptions]="{standalone: true}"
+                    id="inputFromPlace" class="form-control">
+                    <option>Chennai</option>
+                    <option>Hyderabad</option>
+                    <option>Delhi</option>
+                    <option>Cochin</option>
+                    <option>West Bengal</option>
+                    <option>Kolkata</option>
+                    <option>Mumbai</option>
+                    <option>Banglore</option>
+                    <option>Pondicherry</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="inputToPlace">To Place</label>
+                <select type="text" [(ngModel)]="flightTripModel.destinationPlace" [ngModelOptions]="{standalone: true}"
+                    id="inputToPlace" class="form-control">
+                    <option>Chennai</option>
+                    <option>Hyderabad</option>
+                    <option>Delhi</option>
+                    <option>Cochin</option>
+                    <option>West Bengal</option>
+                    <option>Kolkata</option>
+                    <option>Mumbai</option>
+                    <option>Banglore</option>
+                    <option>Pondicherry</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+                <label for="inputStartDate">Start DateTime</label>
+                <input type="date" class="form-control" [(ngModel)]="flightTripModel.startDateTime"
+                    [ngModelOptions]="{standalone: true}" id="inputStartDate">
+            </div>
+            <div class="col-md-4">
+                <label for="inputendDate">End DateTime</label>
+                <input type="date" class="form-control" [(ngModel)]="flightTripModel.returnDateTime"
+                    [ngModelOptions]="{standalone: true}" id="inputendDate" disabled>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+                <label for="inputSeatType">Seat Type</label>
+                <select type="text" [(ngModel)]="seatType" [ngModelOptions]="{standalone: true}" id="inputSeatType"
+                    class="form-control">
+                    <option value="Non-Business Class">Non Business Class</option>
+                    <option value="Business Class">Business Class</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8" style="text-align: center;">
+                <button type="submit" id="btnFindFlights" (click)="FindFlights(flightTripModel)"
+                    class="btn btn-primary">Find Flights</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <div class="row" *ngIf="results.onwardFlightResults.length == 0 || results.returnFlightResults.length == 0 ">
+            <div class="col-md-1">
+            </div>
+            <div *ngIf="noOnwardRecords " class="col-md-5">
+                <h2><b>Onward Flights</b></h2>
+                <p>No Flights Found</p>
+            </div>
+
+            <div *ngIf="noReturnRecords " class="col-md-5">
+                <h2><b>Return Flights</b></h2>
+                <p>No Flights Found</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5" *ngIf="results.onwardFlightResults.length >0">
+                <h2><b>Onward Flights</b></h2>
+                <table id="example" class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Logo</th>
+                            <th>Flight Name</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr [ngClass]="{'table-active' : schedule.isSelected}" (click)="OnwardSelected(schedule)"
+                            *ngFor="let schedule of results.onwardFlightResults">
+                            <td>{{schedule.flightName}}</td>
+                            <td>{{schedule.flightName}}</td>
+                            <td>{{schedule.ticketPrice}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-5" *ngIf="results.returnFlightResults.length > 0">
+                <h2><b>Return Flights</b></h2>
+                <table id="example" class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Logo</th>
+                            <th>Flight Name</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr [ngClass]="{'table-active' : schedule.isSelected}" (click)="ReturnSelected(schedule)"
+                            *ngFor="let schedule of results.returnFlightResults">
+                            <td>{{schedule.flightName}}</td>
+                            <td>{{schedule.flightName}}</td>
+                            <td>{{schedule.ticketPrice}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <br />
+    <div class="container" *ngIf="isSelected">
+        <div class="row">
+            <div class="form-group col-md-2">
+
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" [(ngModel)]="bookingModel.seatsToBook"
+                    [ngModelOptions]="{standalone: true}" id="inputSeats" placeholder="Number of passengers">
+            </div>
+            <div class="form-group col-md-2">
+                <button type="submit" id="btnCalculate" (click)="Calculate()" class="btn btn-danger">Calculate
+                    Price</button>
+            </div>
+            <div class="form-group col-md-2">
+                <input type="text" class="form-control" [(ngModel)]="price" [ngModelOptions]="{standalone: true}"
+                    id="inputPrice" disabled>
+            </div>
+            <div class="form-group col-md-2">
+
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8" style="text-align: center;">
+                <button type="submit" id="btnBookFlight" *ngIf="isSelected" (click)="PassengerDetails()"
+                    class="btn btn-success">Click to enter the Passenger Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+
+<form *ngIf="showPassenger">
+    <h3 style="color:navy; margin-left: 50px;"><b>Passenger Details</b></h3>
+    <div class="form-row">
+        <div style="margin-left: 70px;" class="form-group col-md-4">
+            <label for="inputCustomerName">Customer Name</label>
+            <input type="text" class="form-control" [(ngModel)]="bookingModel.customerName"
+                [ngModelOptions]="{standalone: true}" id="inputCustomerName">
+        </div>
+        <br />
+        <div style="margin-left: 70px;" class="form-group col-md-4">
+            <label for="inputEmail">Email Id</label>
+            <input type="text" class="form-control" [(ngModel)]="bookingModel.email"
+                [ngModelOptions]="{standalone: true}" id="inputEmail" disabled>
+        </div>
+        <br />
+        <div *ngIf="seatNumber > 0" class="container">
+            <h2 style="margin-left: 5%;"><b>Passenger Details</b></h2>
+            <div class="row">
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Meal</th>
+                            <th>Gender</th>
+                            <th>Onward Seat</th>
+                            <th *ngIf="round">Return Seat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let passenger of passengerModels">
+                            <td><input type="text" [ngModelOptions]="{standalone: true}"
+                                    [(ngModel)]="passengerModels[passenger.index].passengerName" /></td>
+                            <td><input type="text" [ngModelOptions]="{standalone: true}"
+                                    [(ngModel)]="passengerModels[passenger.index].passengerAge" /></td>
+                            <td>
+                                <select class="select" [ngModelOptions]="{standalone: true}"
+                                    [(ngModel)]="passengerModels[passenger.index].meal">
+                                    <option value="Veg">Veg</option>
+                                    <option value="Non-veg">Non-Veg</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="select" [ngModelOptions]="{standalone: true}"
+                                    [(ngModel)]="passengerModels[passenger.index].gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="select" [ngModelOptions]="{standalone: true}"
+                                    [(ngModel)]="passengerModels[passenger.index].seat">
+                                    <option value="1A">1A</option>
+                                    <option value="2A">2A</option>
+                                    <option value="3A">3A</option>
+                                    <option value="4A">4A</option>
+                                    <option value="5A">5A</option>
+                                    <option value="6A">6A</option>
+                                    <option value="7A">7A</option>
+                                    <option value="8A">8A</option>
+                                    <option value="9A">9A</option>
+                                    <option value="10A">10A</option>
+                                    <option value="1B">1B</option>
+                                    <option value="2B">2B</option>
+                                    <option value="3B">3B</option>
+                                    <option value="4B">4B</option>
+                                    <option value="5B">5B</option>
+                                    <option value="6B">6B</option>
+                                    <option value="7B">7B</option>
+                                    <option value="8B">8B</option>
+                                    <option value="9B">9B</option>
+                                    <option value="10B">10B</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="select" [ngModelOptions]="{standalone: true}" *ngIf="round"
+                                    [(ngModel)]="passengerModels[passenger.index].returnSeat">
+                                    <option value="1A">1A</option>
+                                    <option value="2A">2A</option>
+                                    <option value="3A">3A</option>
+                                    <option value="4A">4A</option>
+                                    <option value="5A">5A</option>
+                                    <option value="6A">6A</option>
+                                    <option value="7A">7A</option>
+                                    <option value="8A">8A</option>
+                                    <option value="9A">9A</option>
+                                    <option value="10A">10A</option>
+                                    <option value="1B">1B</option>
+                                    <option value="2B">2B</option>
+                                    <option value="3B">3B</option>
+                                    <option value="4B">4B</option>
+                                    <option value="5B">5B</option>
+                                    <option value="6B">6B</option>
+                                    <option value="7B">7B</option>
+                                    <option value="8B">8B</option>
+                                    <option value="9B">9B</option>
+                                    <option value="10B">10B</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <label style="text-align: center;">Price</label>
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+                <label>Discount Code</label>
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+                <label>Net Total Amount</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text" class="form-control" [(ngModel)]="price" [ngModelOptions]="{standalone: true}"
+                    id="inputPrice" disabled>
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+                <input type="text" class="form-control" [(ngModel)]="discount" [ngModelOptions]="{standalone: true}"
+                    id="inputCode">
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+                <button type="submit" id="btnApplyCoupon" (click)=ApplyCoupon() class="btn btn-primary">Apply
+                    Coupon</button>
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+                <input type="text" class="form-control" [(ngModel)]="finalPrice" [ngModelOptions]="{standalone: true}"
+                    id="inputFinal" disabled>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-2" style="text-align: center;">
+                <button type="submit" id="btnBookFlight" *ngIf="isSelected"
+                    (click)="BookFlight(bookingModel, passengerModels)" class="btn btn-success">Book Ticket</button>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+                <button type="submit" id="btnCancel" *ngIf="isSelected" (click)="Cancel()"
+                    class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,294 @@
+2022-07-21 23:52:49.448 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-21 23:52:49.567 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-21 23:52:49.582 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-21 23:52:49.582 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-21 23:52:49.583 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-21 23:52:49.583 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-21 23:52:49.583 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-21 23:52:49.584 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-21 23:52:53.174 +05:30 [DBG] Login Url: /Account/Login
+2022-07-21 23:52:53.178 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-21 23:52:53.178 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-21 23:52:53.178 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-21 23:52:53.178 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-21 23:52:53.178 +05:30 [DBG] Error Url: /home/error
+2022-07-21 23:52:53.178 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-21 23:58:36.850 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 23:58:36.869 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 23:58:36.869 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 23:58:36.884 +05:30 [DBG] Start token request.
+2022-07-21 23:58:36.892 +05:30 [DBG] Start client validation
+2022-07-21 23:58:36.900 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 23:58:36.905 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 23:58:36.942 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 23:58:36.942 +05:30 [DBG] Secret id found: client
+2022-07-21 23:58:36.962 +05:30 [DBG] client configuration validation for client client succeeded.
+2022-07-21 23:58:36.975 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 23:58:36.975 +05:30 [DBG] Client validation success
+2022-07-21 23:58:36.991 +05:30 [DBG] Start token request validation
+2022-07-21 23:58:37.000 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 23:58:37.029 +05:30 [ERR] Requested scope not allowed: Airline
+2022-07-21 23:58:37.045 +05:30 [ERR] {"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"client","client_secret":"***REDACTED***","scope":"Airline"},"$type":"TokenRequestValidationLog"}
+2022-07-21 23:59:46.088 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-21 23:59:46.173 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-21 23:59:46.186 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-21 23:59:46.186 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-21 23:59:46.186 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-21 23:59:46.186 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-21 23:59:46.186 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-21 23:59:46.186 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-21 23:59:47.818 +05:30 [DBG] Login Url: /Account/Login
+2022-07-21 23:59:47.821 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-21 23:59:47.821 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-21 23:59:47.821 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-21 23:59:47.821 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-21 23:59:47.821 +05:30 [DBG] Error Url: /home/error
+2022-07-21 23:59:47.821 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-21 23:59:59.023 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 23:59:59.036 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 23:59:59.036 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 23:59:59.047 +05:30 [DBG] Start token request.
+2022-07-21 23:59:59.054 +05:30 [DBG] Start client validation
+2022-07-21 23:59:59.062 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 23:59:59.066 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 23:59:59.091 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 23:59:59.092 +05:30 [DBG] Secret id found: client
+2022-07-21 23:59:59.109 +05:30 [DBG] client configuration validation for client client succeeded.
+2022-07-21 23:59:59.120 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 23:59:59.120 +05:30 [DBG] Client validation success
+2022-07-21 23:59:59.132 +05:30 [DBG] Start token request validation
+2022-07-21 23:59:59.141 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 23:59:59.175 +05:30 [DBG] client credentials token request validation success
+2022-07-21 23:59:59.194 +05:30 [INF] Token request validation success, {"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Airline","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"client","client_secret":"***REDACTED***","scope":"Airline"},"$type":"TokenRequestValidationLog"}
+2022-07-21 23:59:59.252 +05:30 [DBG] Getting claims for access token for client: client
+2022-07-21 23:59:59.389 +05:30 [DBG] Token request success.
+2022-07-22 00:02:15.589 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 00:02:15.661 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 00:02:15.674 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 00:02:15.674 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 00:02:15.675 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 00:02:15.675 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 00:02:15.675 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 00:02:15.675 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 00:02:17.187 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 00:02:17.192 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 00:02:17.193 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 00:02:17.193 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 00:02:17.193 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 00:02:17.193 +05:30 [DBG] Error Url: /home/error
+2022-07-22 00:02:17.193 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 00:03:40.943 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-22 00:03:40.955 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-22 00:03:40.955 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-22 00:03:40.959 +05:30 [DBG] Start discovery request
+2022-07-22 00:03:41.170 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-22 00:03:41.171 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-22 00:03:41.171 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-22 00:03:41.175 +05:30 [DBG] Start key discovery request
+2022-07-22 00:13:43.385 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 00:13:43.458 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 00:13:43.481 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 00:13:43.481 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 00:13:43.481 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 00:13:43.481 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 00:13:43.481 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 00:13:43.481 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 00:13:45.206 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 00:13:45.210 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 00:13:45.210 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 00:13:45.210 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 00:13:45.210 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 00:13:45.210 +05:30 [DBG] Error Url: /home/error
+2022-07-22 00:13:45.210 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 08:08:44.059 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 08:11:31.883 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 08:11:32.425 +05:30 [FTL] Application startup exception
+System.ArgumentException: Clients must not contain duplicate ids
+   at IdentityServer4.Stores.InMemoryClientStore..ctor(IEnumerable`1 clients) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Stores\InMemory\InMemoryClientStore.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.IdentityServerApplicationBuilderExtensions.TestService(IServiceProvider serviceProvider, Type service, ILogger logger, String message, Boolean doThrow) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Configuration\IdentityServerApplicationBuilderExtensions.cs:line 151
+   at Microsoft.AspNetCore.Builder.IdentityServerApplicationBuilderExtensions.Validate(IApplicationBuilder app) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Configuration\IdentityServerApplicationBuilderExtensions.cs:line 62
+   at Microsoft.AspNetCore.Builder.IdentityServerApplicationBuilderExtensions.UseIdentityServer(IApplicationBuilder app, IdentityServerMiddlewareOptions options) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Configuration\IdentityServerApplicationBuilderExtensions.cs:line 30
+   at IdentityServer.Startup.Configure(IApplicationBuilder app) in C:\Usecase_Backup\UseCase_Rathi_Sprint1\IdentityServer\Startup.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2022-07-22 08:11:59.512 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 08:11:59.620 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 08:11:59.641 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 08:11:59.641 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 08:11:59.641 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 08:11:59.641 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 08:11:59.641 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 08:11:59.641 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 08:12:02.375 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 08:12:02.378 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 08:12:02.378 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 08:12:02.378 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 08:12:02.378 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 08:12:02.378 +05:30 [DBG] Error Url: /home/error
+2022-07-22 08:12:02.378 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 08:13:43.869 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 08:13:44.074 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 08:13:44.120 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 08:13:44.120 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 08:13:44.120 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 08:13:44.120 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 08:13:44.121 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 08:13:44.121 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 08:13:46.954 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 08:13:46.978 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 08:13:46.978 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 08:13:46.979 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 08:13:46.980 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 08:13:46.980 +05:30 [DBG] Error Url: /home/error
+2022-07-22 08:13:46.980 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 08:26:18.109 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 08:26:18.350 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 08:26:18.370 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 08:26:18.370 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 08:26:18.370 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 08:26:18.371 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 08:26:18.371 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 08:26:18.371 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 08:26:22.080 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 08:26:22.085 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 08:26:22.085 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 08:26:22.085 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 08:26:22.085 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 08:26:22.085 +05:30 [DBG] Error Url: /home/error
+2022-07-22 08:26:22.085 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 08:29:02.462 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 08:29:02.602 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 08:29:02.629 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 08:29:02.630 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 08:29:02.630 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 08:29:02.630 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 08:29:02.630 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 08:29:02.630 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 08:29:06.658 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 08:29:06.667 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 08:29:06.668 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 08:29:06.668 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 08:29:06.668 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 08:29:06.668 +05:30 [DBG] Error Url: /home/error
+2022-07-22 08:29:06.668 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 08:30:36.252 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 08:30:36.416 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 08:30:36.436 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 08:30:36.437 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 08:30:36.437 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 08:30:36.437 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 08:30:36.437 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 08:30:36.437 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 08:30:37.693 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 08:30:37.696 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 08:30:37.696 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 08:30:37.696 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 08:30:37.696 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 08:30:37.696 +05:30 [DBG] Error Url: /home/error
+2022-07-22 08:30:37.696 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 08:55:17.836 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 08:55:17.918 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 08:55:17.937 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 08:55:17.938 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 08:55:17.938 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 08:55:17.938 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 08:55:17.938 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 08:55:17.938 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 08:55:18.551 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 08:55:18.555 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 08:55:18.555 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 08:55:18.555 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 08:55:18.555 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 08:55:18.555 +05:30 [DBG] Error Url: /home/error
+2022-07-22 08:55:18.555 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 09:14:25.353 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 09:14:25.479 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 09:14:25.501 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 09:14:25.501 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 09:14:25.502 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 09:14:25.502 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 09:14:25.502 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 09:14:25.502 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 09:14:27.712 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 09:14:27.716 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 09:14:27.716 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 09:14:27.716 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 09:14:27.717 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 09:14:27.717 +05:30 [DBG] Error Url: /home/error
+2022-07-22 09:14:27.717 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 09:17:14.759 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 09:17:14.972 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 09:17:15.018 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 09:17:15.018 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 09:17:15.018 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 09:17:15.018 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 09:17:15.019 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 09:17:15.019 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 09:17:20.851 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 09:17:20.858 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 09:17:20.859 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 09:17:20.859 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 09:17:20.859 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 09:17:20.859 +05:30 [DBG] Error Url: /home/error
+2022-07-22 09:17:20.859 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 09:21:12.091 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 09:21:12.178 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 09:21:12.199 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 09:21:12.199 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 09:21:12.199 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 09:21:12.199 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 09:21:12.200 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 09:21:12.200 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 09:21:14.409 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 09:21:14.412 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 09:21:14.412 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 09:21:14.412 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 09:21:14.412 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 09:21:14.412 +05:30 [DBG] Error Url: /home/error
+2022-07-22 09:21:14.412 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 15:41:32.811 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 15:41:32.889 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 15:41:32.904 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 15:41:32.904 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 15:41:32.904 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 15:41:32.904 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 15:41:32.904 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 15:41:32.904 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 15:41:33.819 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 15:41:33.822 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 15:41:33.823 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 15:41:33.823 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 15:41:33.823 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 15:41:33.823 +05:30 [DBG] Error Url: /home/error
+2022-07-22 15:41:33.823 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 15:43:33.587 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 15:43:33.670 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 15:43:33.687 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 15:43:33.688 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 15:43:33.688 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 15:43:33.688 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 15:43:33.688 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 15:43:33.688 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 15:43:34.414 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 15:43:34.418 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 15:43:34.418 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 15:43:34.418 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 15:43:34.418 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 15:43:34.418 +05:30 [DBG] Error Url: /home/error
+2022-07-22 15:43:34.418 +05:30 [DBG] Error Id Parameter: errorId

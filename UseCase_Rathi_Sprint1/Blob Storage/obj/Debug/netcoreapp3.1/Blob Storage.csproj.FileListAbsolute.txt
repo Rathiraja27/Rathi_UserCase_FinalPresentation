@@ -1,0 +1,36 @@
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Blob Storage.exe
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Blob Storage.deps.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Blob Storage.runtimeconfig.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Blob Storage.runtimeconfig.dev.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Blob Storage.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Blob Storage.pdb
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Microsoft.WindowsAzure.Storage.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.csproj.AssemblyReference.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.AssemblyInfoInputs.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.AssemblyInfo.cs
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.csproj.CoreCompileInputs.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.MvcApplicationPartsAssemblyInfo.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\staticwebassets\Blob Storage.StaticWebAssets.Manifest.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\staticwebassets\Blob Storage.StaticWebAssets.xml
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\scopedcss\bundle\Blob Storage.styles.css
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.RazorTargetAssemblyInfo.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.pdb
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.genruntimeconfig.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Common.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\Blob Storage\obj\Debug\netcoreapp3.1\Blob Storage.csproj.CopyComplete

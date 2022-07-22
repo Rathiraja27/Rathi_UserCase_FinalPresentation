@@ -1,0 +1,72 @@
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\appsettings.json
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Ocelot.json
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.exe
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.deps.json
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.runtimeconfig.json
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.runtimeconfig.dev.json
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.pdb
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Consul.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Ocelot.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\Ocelot.Provider.Consul.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\FSE Training\UseCase\API Gateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.AssemblyInfoInputs.cache
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.AssemblyInfo.cs
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.csproj.CoreCompileInputs.cache
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.MvcApplicationPartsAssemblyInfo.cs
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.MvcApplicationPartsAssemblyInfo.cache
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\staticwebassets\API Gateway.StaticWebAssets.Manifest.cache
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\staticwebassets\API Gateway.StaticWebAssets.xml
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\scopedcss\bundle\API Gateway.styles.css
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.RazorTargetAssemblyInfo.cache
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.dll
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.pdb
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.genruntimeconfig.cache
+C:\FSE Training\UseCase\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.csproj.AssemblyReference.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Ocelot.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.exe
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.deps.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.runtimeconfig.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.runtimeconfig.dev.json
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\API Gateway.pdb
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Ocelot.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\Ocelot.Provider.Consul.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.csproj.AssemblyReference.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.AssemblyInfoInputs.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.AssemblyInfo.cs
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.csproj.CoreCompileInputs.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\staticwebassets\API Gateway.StaticWebAssets.Manifest.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\staticwebassets\API Gateway.StaticWebAssets.xml
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\scopedcss\bundle\API Gateway.styles.css
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.RazorTargetAssemblyInfo.cache
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.dll
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.pdb
+C:\Usecase_Backup\UseCase_Rathi_Sprint1\API Gateway\obj\Debug\netcoreapp3.1\API Gateway.genruntimeconfig.cache
